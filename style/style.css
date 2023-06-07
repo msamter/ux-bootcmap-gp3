@@ -36,38 +36,6 @@ body, h1, h2, p, ul {
     padding: 0;
   }
 
-/* Global styles */
-body {
-    font-family: lato, sans-serif;
-  
-  h1 {
-      font-family: lato, sans-serif;
-    }
-  
-  h2 {
-      font-family: lato, sans-serif;
-    }
-  
-  h3 {
-      font-family: lato, sans-serif;
-    }
-  
-  h4 {
-      font-family: lato, sans-serif;
-    }
-  
-  h5 {
-      font-family: lato, sans-serif;
-    }
-  
-  h6 {
-      font-family: lato, sans-serif;
-    }
-  
-  p {
-      font-family: lato, sans-serif;
-    }
-
   /* Navigation styles */
   nav {
     background-color: #333;
