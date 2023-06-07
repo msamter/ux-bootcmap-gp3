@@ -1,7 +1,7 @@
 /* Global styles */
 body {
     font-family: lato, sans-serif;
-  
+}
   h1 {
       font-family: lato, sans-serif;
     }
@@ -98,3 +98,4 @@ body, h1, h2, p, ul {
     color: #fff;
     padding: 20px;
     text-align: center;
+  }
