@@ -14,4 +14,4 @@ WOMEN IN TECHNOLOGY (WIT) EMPOWERS GIRLS AND WOMEN TO EXCEL IN SCIENCE, TECHNOLO
 We do this by providing our community with education, exposure, and experience.  By sharing the stories of successful professionals across the STEAM fields, we encourage all generations of girls and women to write their future.
 
 Author(s): Avery Ross, Betanya Abebe, James Webster, Micah Samter, Sarah Banks
-Tools Used: Figma, FigJam, Trello, VC Studio
+Tools Used: Figma, FigJam, Trello, VS Code, GitHub
