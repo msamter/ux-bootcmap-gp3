@@ -38,7 +38,7 @@ body, h1, h2, p, ul {
 
   /* Navigation styles */
   nav {
-    background-color: #333;
+    background-color: #360259;
     color: #fff;
     padding: 10px;
   }
@@ -48,7 +48,11 @@ body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+
   }
   
   nav li {
@@ -67,6 +71,107 @@ body, h1, h2, p, ul {
     justify-content: space-around;
 }/*active on circle logo*/
 
+/* next is for the header sliders*/
+
+/* {box-sizing:border-box}*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  /*display:table-row;*/
+  
+  /************this is the problem point... 
+  I think I may need to add javascript, 
+  to make this piece of code work*******/
+
+  /***** Here is the link to where I've been referencing code.
+  https://www.w3schools.com/howto/howto_js_slideshow.asp
+  
+  It also gives example of how to make automatic
+  slides, USING JAVASCRIPT. I may need to add a JAVASCRIPT file
+  into the folder, to make the slideshow run.*******/
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} /*for the sliders*/
+
 .HeaderLogo {
     top: 18px;
     left:60px /*active on circle logo picture*/
@@ -77,8 +182,8 @@ body, h1, h2, p, ul {
   position: absolute;
   top: 0;
   left: calc(50% - 180px);
-  width: 360px;
-  height: 81.5px;
+  /*width: 360px;
+  height: 81.5px;*/
   overflow: hidden;
 }
 
@@ -100,7 +205,11 @@ body, h1, h2, p, ul {
     margin-top: 20px;
   }
 
-
+.headerNavigation {
+  position: relative;
+  text-align: center;
+  color: #360259;
+}
 
   .homepage-carosel-mid-fi-hi-f {
     position: absolute;
@@ -149,7 +258,7 @@ img {
 
   /* Footer styles */
   footer {
-    background-color: #333;
+    background-color: #360259;
     color: #fff;
     padding: 20px;
     text-align: center;
