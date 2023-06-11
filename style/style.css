@@ -178,6 +178,16 @@ font-family: 'DM Serif Display', serif;
     color: white;
     text-align: center;
 }/**/
+.containerPrograms {
+  padding: 32px 23px 28px;
+  margin: 20px 2px;
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #F0F0F0;
+
+}/**/
 .container2 {
   padding: 2px 16px;
   color: white;
@@ -367,6 +377,12 @@ img {
     height: 10%;
 }
 
+.btn-default {
+  color: #fff;
+  background-color: #C93E8B;
+  border-color: #C93E8B;
+
+}
 /*<div class="card-img-overlay box">
     <img class="card-img-top" src="img/green.jpg" alt="Card image" style="width:100%">
     <h4 class="card-title text">Title</h4>
@@ -382,3 +398,4 @@ img {
             <a href="#" class="btn btn-danger">Learn more</a>
         </div>
     </div>*/
+    
