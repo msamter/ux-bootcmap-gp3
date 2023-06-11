@@ -1,50 +1,46 @@
 /* Global styles */
-
+font-family: 'DM Serif Display', serif;
   h1 {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 36px;
       font-weight: 600
     }
   
   h2 {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 30px;
       font-weight: 600
     }
   
   h3 {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 26px;
       font-weight: 600
     }
   
   h4 {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 22px;
       font-weight: 600
     }
   
   h5 {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 20px;
       font-weight: 600
     }
   
   h6 {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-size: 18px;
       font-weight: 600
     }
     
   p {
-      font-family: 'Noto Serif';
+      font-family: 'Noto Serif', sans-serif;
     }
   
-/* Reset some default styles */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-  }
+
 
   /* Navigation styles */
   nav {
@@ -235,6 +231,8 @@ img {
   }
   .donate-bar {
     padding: 32px 23px 28px;
+    margin: 20px 2px;
+    background-color: #F0F0F0; /* changes color of donate bar box */
   }
   .donate-bar > div:first-child {
     font-family: 'Roboto Condensed', sans-serif;
@@ -331,3 +329,56 @@ img {
     padding-left: 20px;
     padding-top: 15px;
   }
+  
+.wells { /* I took this element from donate page connection, from external code
+  so I could change the background color of the box: I changed . well to .wells)
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #360259;
+  border: 1px solid @well-border;
+  border-radius: @border-radius-base;
+  .box-shadow(inset 0 1px 1px rgba(0, 0, 0, .05));
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, .15);
+  }
+}
+/* for glas text overlays*/
+
+.box{
+    position: relative;
+    /*display: inline-block; /* Make the width of box same as image */
+}
+.box .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    top: 60%; /* Adjust this value to move the positioned div up and down */
+    background: rgba(178, 0, 0, 0.8);
+    font-family: Arial,sans-serif;
+    color: white;
+    width: 100%; /* Set the width of the positioned div */
+    height: 10%;
+}
+
+/*<div class="card-img-overlay box">
+    <img class="card-img-top" src="img/green.jpg" alt="Card image" style="width:100%">
+    <h4 class="card-title text">Title</h4>
+</div>
+
+<div class="container">
+        <div class="card img-fluid" style="padding: 32px 23px 28px">
+            <img class="card-img-top" src=".jpg" alt="Card image" style="width:100%">
+            <div class="card-img-overlay box">
+                <h4 class="card-title text">Title</h4>
+            </div>
+            <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+            <a href="#" class="btn btn-danger">Learn more</a>
+        </div>
+    </div>*/

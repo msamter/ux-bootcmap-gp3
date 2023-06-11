@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>WIT</title>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
   <link rel="stylesheet" href="style/style.css">
   <link rel="icon" href="./favicon.svg" type="favicon">
@@ -112,16 +112,16 @@
   background-color: #C93E8B; /* pink */
   border: none;
   color: white;
-  padding: 2px 16px; /* originally 15px and 32px*/
+  padding: 10px 16px; /* originally 15px and 32px*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 10px 2px;
   cursor: pointer;
 }
 
-.button1 {width: 100%;}
+.button1 {width: 90%;}
 .button2 {width: 50%;}
 .button3 {width: 100%;}
   </style>
@@ -336,10 +336,11 @@
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header well text-center theme-background-blue">
+                  <div class="modal-header wells text-center theme-background-blue">  <!-- Changed from "well" to "wells" -->
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     <h2>You’re Donating:</h2>
                     <h1 style="font-size: 5.5em; margin-top: 0;">$<span id="price"></span></h1>
+                    <h3> To Provide Education Opportunities To Women Entering the Stem Field</h3>
                     <em>Thank you!</em>
                   </div>
                   <div class="modal-body">
@@ -386,6 +387,23 @@
           </div>
         </div><!--/.donate-bar-->
       </div><!-- /.col-md-12 -->
+    <h2>WIT Programs</h2>
+
+    <div class= "container">
+      <!--<div class="card img-fluid" style="padding: 32px 23px 28px">-->
+        <div class="card-img-overlay box">
+          <img class="card-img-top" src="images/wit logo transparent.png" alt="Card image" style="width:100%">
+          <!--<div class="card-img-overlay box">-->
+          <h4 class= "card-title text"> Write Your Future</h4>
+          <!--</div>-->
+          <p class="card-text"> WIT empowers girls and women to excel 
+          in science, technology, engineering, the 
+          arts, and math (STEAM) From the classroom 
+          to the boardroom.</p>
+          <a href="#" class="btn btn-default"> Learn More</a>
+        </div>
+      <!--</div>-->
+    </div>
 
   </section>
 
