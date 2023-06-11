@@ -84,7 +84,7 @@ body, h1, h2, p, ul {
 
 /* Hide the images by default */
 .mySlides {
-  /*display:table-row;*/
+  display:ta;
   
   /************this is the problem point... 
   I think I may need to add javascript, 
