@@ -7,9 +7,9 @@ font-family: 'DM Serif Display', serif;
     }
   
   h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 30px;
-      font-weight: 600
+      font-family: 'Montserrat', sans-serif !important; 
+      font-size: 30px !important;
+      font-weight: 600 !important;
     }
   
   h3 {
@@ -149,10 +149,6 @@ font-family: 'DM Serif Display', serif;
     border-radius: 5px; /* 5px rounded corners */
     text-align: center;
   
-  }
-  
-  .content h2 {
-    font-size: 20px;
   }
   
   .content p {
