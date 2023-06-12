@@ -325,11 +325,17 @@ img {
     text-decoration: none;
     background-color: transparent;
   }
-  .donate-buttons .active {
+  .donate-buttons {
     background-color: #360259;
     border: 5px solid #360259;
     color: white;
   }
+  .active {
+    background-color: #360259;
+    border: 5px solid #360259;
+    color: white;
+  }
+
   .donate-buttons:focus {
   outline: -webkit-focus-ring-color auto 0px;
   }
