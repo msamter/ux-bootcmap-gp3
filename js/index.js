@@ -23,6 +23,7 @@
       //slides[slideIndex-1].style.display = "block";
       //dots[slideIndex-1].className += " active";
     //}
+    //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
 let slideIndex = 0;
 showSlides();
     
