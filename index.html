@@ -96,7 +96,7 @@
 }
 
     .active, .dot:hover {
-      background-color: #666666; 
+      background-color: #360259; 
 }
 
 /* Fading animation */
@@ -113,8 +113,63 @@
     @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}}
 
+button {
+  font-family: 'Montesrrat', sans-serif;
+  font-weight: bold;
+  background-color: #6165AF;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  padding: 0;
+  width: 75px;
+  /*height: 37px;*/
+  margin-top: 8px;
+}
+button:focus {
+  font-family: 'Montesrrat', sans-serif;
+  font-weight: bold;
+  background-color: #360259;
+  width: 90%;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  padding: auto;
+  width: 75px;
+  /*height: 37px;*/
+  margin-top: 8px;
+}
+.button11:focus{
+  font-family: 'Montesrrat', sans-serif;
+  width: 90% !important;
+  font-weight: bold;
+  background-color: #B3B4C8 ;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  padding: auto;
+  /*height: 37px;*/
+  margin-top: 8px;
+}
+
+
+
 .button {
   background-color: #C93E8B; /* pink */
+  width: 90%;
+  border: none;
+  color: white;
+  padding: 10px 16px ; /* originally 15px and 32px*/
+  text-align: center;
+  font-family: 'Montserrat' !important;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+.button11 {
+  background-color: #C93E8B; /* pink */
+  width: 90%;
   border: none;
   color: white;
   padding: 10px 16px; /* originally 15px and 32px*/
@@ -123,8 +178,20 @@
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
-  margin: 10px 2px;
+  margin: 10px 10px 10px;
   cursor: pointer;
+}
+
+#buttons li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
+
+#buttons li a:hover {
+  text-decoration: none;
+ /* color: #000000;*/
+  /*background-color: #6165AF;*/
 }
 
 .button1 {width: 90%;}
@@ -274,7 +341,7 @@
 
     <p>Women in Technology</p>
 
-    <button class="button button1">Sign up for FREE Membership</button><br>
+    <button class="button button11">Sign up for FREE Membership</button><br>
 
     <div class= "card1">
       <div class="container1">
@@ -298,10 +365,10 @@
             Your Donations Provide Education Opportunities To Women Entering the Stem Field
           </p>
           <div class="col-md-8">
-            <ul class="nav navbar-nav navbar-left donate-buttons" id="donate-buttons">
+            <ul class="nav navbar-nav navbar-left donate-buttons" id="#donate-buttons">
               <li>
-              <a href="#"> 
-                <button class="btn-blue active" data-dollars='25' data-impact="Covers housing or counseling services for one person">
+              <a href="#donate-buttons"> 
+                <button class="btn-blue" data-dollars='25' data-impact="Covers housing or counseling services for one person">
                   $25
                 </button>
               </a>
@@ -311,24 +378,24 @@
                   $50
                 </button>
               </a></li>
-              <li><a href="#">
+              <li><a href="#donate-buttons">
                 <button class="btn-blue" data-dollars='100' data-impact="Covers housing or counseling services for four people">
                   $100
                 </button>
               </a></li>
-              <li><a href="#">
+              <li><a href="#donate-buttons">
                 <button class="btn-blue" data-dollars='500' data-impact="Covers housing or counseling services for twenty people">
                   $500
                 </button>
               </a></li>
-              <li id="other"><a href="#">
-                <button class="btn-blue-other" data-dollars='other' data-impact="Thank you!">
+              <li id="other"><a href="#other-input input">
+                <button class="btn-blue" data-dollars='other' data-impact="Thank you!">
                   OTHER
                 </button>
               </a></li>
-              <li id="other-input">
+              <li id="#other-input input">
                 <span>$</span>
-               <input data-impact="That’s great. Thank you!">
+               <input data-impact="Thank you!">
               </li>
               <li><a href="#">
                 <button class="btn-pink" data-toggle="modal" data-target="#myModal">
@@ -340,23 +407,25 @@
               </a></li>
             </ul>
 
+
+
             <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header wells text-center theme-background-blue">  <!-- Changed from "well" to "wells" -->
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <button type="button" class="close" style="color: #FFFFFF; border-color: #FFFFFF; opacity: .8;" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     <h2>You’re Donating:</h2>
-                    <h1 style="font-size: 5.5em; margin-top: 0;">$<span id="price"></span></h1>
-                    <h3> To Provide Education Opportunities To Women Entering the Stem Field</h3>
-                    <em>Thank you!</em>
+                    <h1 style="font-size: 5.5em; margin-top: 0;">$50<span id="price"></span></h1>
+                    <h4> To Provide Education Opportunities To Women Entering the Stem Field</h4>
+                    <h3>Thank you!</h3>
                   </div>
                   <div class="modal-body">
                     <div class="row">  
                       <section class="col-md-12">
                         <form>
                           <fieldset class="col-md-6">
-                            <legend>
+                            <legend style="font-weight: bold; margin: 10px;">
                               Your personal info
                             </legend>
                             <label>Your Name</label>
@@ -365,12 +434,12 @@
                             <input type="email" class="form-control">
                             <label>Address</label>
                             <input type="email" class="form-control">
-                            <label>City, State, Zip Code</label>
-                            <input type="email" class="form-control">
+                            <label >City, State, Zip Code</label>
+                            <input type="email" class="form-control" style="height: 50px ;">
                           </fieldset>
-                          <fieldset class="col-md-6">
-                            <legend>
-                              Credit Card Information
+                          <fieldset class="col-md-6" style="margin: 10px;">
+                            <legend style="font-weight: bold; margin: 10px; height: 50px;">
+                              Credit card information
                             </legend>
                             <label for="card-number">Credit Card Number</label>
                             <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number" id="card-number">
@@ -386,8 +455,8 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">BACK</button>
-                    <button type="button" class="btn-green">CONTINUE</button>
+                    <button type="button" class="btn-blue" data-dismiss="modal">BACK</button>
+                    <button type="button" class="btn-blue">CONTINUE</button>
                   </div>
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->

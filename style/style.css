@@ -42,7 +42,10 @@ font-family: 'DM Serif Display', serif;
       font-size: 16px !important;
       font-weight: 300 !important;
     }
-  
+  a {
+    background-color: #360259;
+
+  }
 
 
   /* Navigation styles */
@@ -269,8 +272,8 @@ img {
     border-radius: 5px;
     border: 0;
     padding: 0;
-    width: 75px;
-    height: 37px;
+    width: 75px !important;
+    height: 37px !important;
     margin-top: 8px;
   }
   .btn-pink {
@@ -281,8 +284,20 @@ img {
     border-radius: 5px;
     border: 0;
     padding: 0;
-    width: 114px;
-    height: 37px;
+    width: 114px !important;
+    height: 50px !important;
+    margin-top: 8px;
+  }
+  .btn-grey {
+    font-family: 'Montesrrat', sans-serif;
+    font-weight: bold;
+    background-color: #B3B4C8;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+    width: 114px !important;
+    height: 50px !important;
     margin-top: 8px;
   }
   #other-input {
@@ -327,6 +342,7 @@ img {
     justify-content:center;
   }
   .donate-buttons .active {
+    list-style:none;
     background-color: #360259;
     border: 5px solid #360259;
     color: white;
@@ -346,6 +362,22 @@ img {
   .donate-buttons li:last-child {
     font-size: 17px;
     line-height: 37px;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  .donate-buttons li a {
+    color: white;
+    font-size: 17px;
+    line-height: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  .donate-buttons li a:hover {
+    /*background-color: #360259;*/
+    color: white;
+    /*border: 5px solid #360259;*/
+    font-size: 17px;
+    line-height: 10px;
     padding-left: 20px;
     padding-top: 15px;
   }
@@ -408,4 +440,18 @@ img {
             <a href="#" class="btn btn-danger">Learn more</a>
         </div>
     </div>*/
-    
+.H1toH5 input { display: none; }
+.H1toH5 .seatButton { 
+
+font-family: 'Montesrrat', sans-serif;
+font-weight: bold;
+background-color: #6165AF;
+color: #fff;
+border-radius: 5px;
+border: 0;
+padding: 0;
+width: 75px;
+height: 37px;
+margin-top: 8px;
+.H1toH5 input:checked + .seatButton { background: red; }
+
